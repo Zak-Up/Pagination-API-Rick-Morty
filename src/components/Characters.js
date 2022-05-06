@@ -3,12 +3,12 @@ import React from 'react'
 const Characters = ({characters}) => {
     return (
         <div>
-            <div className='row'>
+            <div className='row g-0'>
                 {
                     characters.map((el, index) => (
                         <div key={index} className='col mb-4'>
-                            <div className='card text-white bg-dark mb-3' style={{minWidth: '200px'}}>
-                                <img src={el.image} alt=''></img>
+                            <div className='card text-white bg-dark mb-3 mx-3' style={{minWidth: '200px'}}>
+                                <div className='image'><img src={el.image} alt='' style={{width: '100%'}}></img></div>
                                 <div className='card-body'>
                                     <h3 className='card-title'>{el.name}</h3>
                                     <hr/>
