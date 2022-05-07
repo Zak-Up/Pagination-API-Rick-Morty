@@ -63,6 +63,14 @@ code {
   transform: translateY(-.25rem);
 }
 
+.tittle{
+  margin-top: 10rem;
+  margin-bottom: 0;
+  color:rgba(255, 255, 255, 0.796);
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{

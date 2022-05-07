@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Characters from "./components/Characters";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/Pagination";
+import Tittle from "./components/Tittle";
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
   return (
     <>
       <Navbar/>
+      <div className="container">
+        <Tittle/>
+      </div>
       <div className="container">
         <Pagination prev={info.prev} next={info.next} onPrevious={onPreviuos} onNext={onNext}/>
         <Characters characters={characters}/>

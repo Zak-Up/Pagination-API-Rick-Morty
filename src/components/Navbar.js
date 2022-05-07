@@ -35,10 +35,10 @@ export function BootstrapNavbar(){
                         <a className="nav-link disabled">Disabled</a>
                     </li>
             </ul> */}
-                <form className="d-flex">
+                {/* <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Encuentra tu personaje" aria-label="Search"/>
                     <button className="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                </form> */}
                 </div>
             </div>
         </nav>
