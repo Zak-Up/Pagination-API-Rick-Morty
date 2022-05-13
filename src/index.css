@@ -71,6 +71,7 @@ span{
   border-radius: 10px;
   border: solid 10px rgb(5, 2, 38);
   background: linear-gradient(to bottom, #00555b , #020112);
+  width: 190px;
 }
 
 .card h6{
@@ -122,6 +123,12 @@ span{
   color: rgb(29, 240, 169);
   font-weight: bold;
   font-size: 20px;
+}
+
+.p-error{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* ---======= RESPONSIVE =======--- */

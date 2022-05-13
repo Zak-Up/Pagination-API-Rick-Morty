@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Characters = ({characters, texto}) => {
-    if(characters.length === 0) return <p>No existen personajes con el nombre "{texto}"</p>
+    if(characters.length === 0) return <p className='p-error'>No existen personajes con el nombre "{texto}" aqui, salta de página o escribe el nombre correcto</p>
 
     return (
         <div>
@@ -9,7 +9,7 @@ const Characters = ({characters, texto}) => {
                 {
                     characters.map((el, index) => (
                         <div key={index} className='col mb-4'>
-                            <div className='card text-white  mb-3 mx-3' style={{minWidth: '200px'}}>
+                            <div className='card text-white  mb-3 mx-3' style={{maxWidth: '500px'}}>
                                 <div className='image'><img src={el.image} alt='' style={{width: '100%'}}></img></div>
                                 <div className='card-body'>
                                     <h3 className='card-title'>{el.name} 🧬</h3>
