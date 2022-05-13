@@ -10,6 +10,7 @@ const Filter = ({ texto, setTexto}) => {
         e.preventDefault();
         console.log(texto);
     }
+    
     return (
         <div className='filtrar'>
             <form onSubmit={handleSubmit}>

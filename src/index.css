@@ -66,6 +66,16 @@ span{
   box-shadow: 1px 5px 15px #000000;
   border-radius: 10px;
   border: solid 10px rgb(5, 2, 38);
+  background: linear-gradient(to bottom, #00555b , #020112);
+}
+
+.card h6{
+  color: rgb(237, 184, 8);
+  font-size: 12px;
+}
+
+.h7{
+  color: white;
 }
 
 .card:hover{
@@ -108,6 +118,25 @@ span{
   color: rgb(29, 240, 169);
   font-weight: bold;
   font-size: 20px;
+}
+
+/* ---======= RESPONSIVE =======--- */
+@media screen and (max-width: 520px){
+  .filtrar{
+    margin-left: 20%;
+  }
+
+  .bi{
+    color: rgba(255, 255, 255, 0.796);
+  }
+
+  .btn-left{
+    left: 1px;
+  }
+
+  .btn-rigth{
+    right: 1px;
+  }
 }
 
 
