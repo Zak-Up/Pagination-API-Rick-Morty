@@ -11,7 +11,7 @@ const Pagination = ({prev, next, onPrevious, onNext}) => {
     }
 
     return (
-        <div className='container'>
+        <div className='container-pag'>
             <nav>
                 <ul className='pagination justify-content-center  p-5'>
                     {

@@ -14,6 +14,16 @@ code {
     monospace;
 }
 
+p{
+  color: white;
+}
+
+span{
+  font-size: 20px;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 0.796);
+}
+
 /* ============== BTN PAGINATION ============ */
 
 .btn-left{
@@ -64,11 +74,40 @@ code {
 }
 
 .tittle{
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 0;
   color:rgba(255, 255, 255, 0.796);
   font-size: large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.filtrar{
+  display: block;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-left: 35%;
+  margin-bottom: 0;
+}
+
+.filtrar input{
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  border: 4px solid rgb(64, 12, 195);
+  border-radius: 8px;
+  background: transparent;
+  padding: 0.5rem;
+  color: white;
+  outline: none;
+}
+
+.container-pag{
+  height: 4rem;
+}
+
+.card-body h3{
+  color: rgb(29, 240, 169);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 

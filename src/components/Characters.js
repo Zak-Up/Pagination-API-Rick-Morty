@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Characters = ({characters}) => {
+const Characters = ({characters, texto}) => {
+    if(characters.length === 0) return <p>No existen personajes con el nombre "{texto}"</p>
+
     return (
         <div>
             <div className='row g-0'>

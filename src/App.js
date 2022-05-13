@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Characters from "./components/Characters";
+import Filter from "./components/Filter";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/Pagination";
-import Tittle from "./components/Tittle";
 
 
 function App() {
 
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
+  const [texto, setTexto] = useState('');
 
   const url = "https://rickandmortyapi.com/api/character";
 
@@ -34,15 +35,25 @@ function App() {
     fetchCharacters(url);
   }, []);
 
+  const filterCharacter = characters.filter(el => el.name.toLowerCase().includes(texto.toLocaleLowerCase()))
+
   return (
     <>
       <Navbar/>
-      <div className="container">
+      {/* <div className="container">
         <Tittle/>
+      </div> */}
+      <div className="container">
+        <Filter
+        texto={texto}
+        setTexto={setTexto}
+        />
       </div>
       <div className="container">
         <Pagination prev={info.prev} next={info.next} onPrevious={onPreviuos} onNext={onNext}/>
-        <Characters characters={characters}/>
+        <Characters
+        texto={texto} 
+        characters={filterCharacter}/>
       </div>
     </>
   );
