@@ -4,7 +4,7 @@ import logo from '../assets/rick-and-morty-logo.png';
 export function BootstrapNavbar(){
     return(
         
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container mx-auto">
                 <a className="navbar-brand" href="index.html">
                     <img src={logo} alt='logo' width="180px"></img>

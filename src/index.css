@@ -25,6 +25,10 @@ span{
 }
 
 /* ============== BTN PAGINATION ============ */
+.navbar{
+  height: 70px;
+  background-color: #0000009b;
+}
 
 .btn-left{
   position: fixed;
@@ -94,7 +98,7 @@ span{
 .filtrar{
   display: block;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-left: 35%;
   margin-bottom: 0;
 }
@@ -111,7 +115,7 @@ span{
 }
 
 .container-pag{
-  height: 4rem;
+  height: 2.5rem;
 }
 
 .card-body h3{
